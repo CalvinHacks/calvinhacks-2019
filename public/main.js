@@ -20,24 +20,25 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  // Display the result in the element with id="time"
+  document.getElementById("time").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("time").innerHTML = "EXPIRED";
   }
 }, 1000);
 
 
-//////////
-// Mail //
-//////////
 
 // Email subscription to Mailchimp using jquery
 $(document).ready(function() {
+
+  //////////
+  // Mail //
+  //////////
 
   $('form').submit(function(event) {
     var userEmail = $('#email').val();
@@ -56,9 +57,14 @@ $(document).ready(function() {
     });
   });
 
+
+  ////////////
+  // Scroll //
+  ////////////
+
   $(".button-container").click(function() {
     $('html,body').animate({
-      scrollTop: $(".page2").offset().top
+      scrollTop: $(".second-page").offset().top
     },
       'slow');
   });
