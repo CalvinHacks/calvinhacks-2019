@@ -11,4 +11,4 @@ run server
 node server.js
 ```
 
-go to localhost:4000 on webbrowser
+go to localhost:4000 on web browser
