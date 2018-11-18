@@ -288,6 +288,10 @@ a.button::after {
   margin: 8% 0;
 }
 
+.register-button {
+  color: white;
+}
+
 .button-container {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
