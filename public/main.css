@@ -1,0 +1,387 @@
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Teko);
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+}
+
+.front-page {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100vh;
+  min-height: 105px;
+}
+
+.video-container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  vertical-align: center;
+  z-index: 1;
+}
+
+.front-page-content {
+  position: relative;
+  z-index: 2;
+}
+
+.front-page-content h2 {
+  color: #fff;
+}
+
+.front-page h1 {
+  color: #efefef;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.button-container {
+  padding: 0px;
+  border: 0px;
+  outline: none;
+  margin: 0px;
+}
+
+.second-page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-lane {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-lane {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-info {
+  color: #E4FDE1;
+}
+
+.event-info {
+  color: #E4FDE1;
+}
+
+.second-page {
+  font-size: 24px;
+  padding: 30px;
+  background-color: #000;
+  color: #fff;
+}
+
+.inner-button {
+  display: inline-block;
+  padding: 10px 14px;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 50px;
+  background-color: rgba(255,255,255, 0);
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #005E6A;
+  color: #fff;
+  padding: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact a {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.sponsors-mail {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+
+}
+
+
+.subscribe {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.event-content {
+  padding: 30px;
+  padding-left: 0px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-content {
+  padding: 30px;
+  padding-left: 100px;
+  margin-left: 70px;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+}
+
+.email-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 230px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FFF;
+  color: #FFF;
+  box-sizing: border-box;
+  font-size: 18px;
+  height: 50px;
+  left: 50%;
+  width: 200px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+.input:focus+.underline {
+  transform: scale(1);
+}
+
+.countdown {
+  font-size: 40px;
+}
+
+#demo {
+  color: #fff;
+  font-size: 40px;
+}
+
+textarea, select, input, button { outline: none; }
+
+.underline {
+  background-color: #F45B69;
+  height: 2px;
+  margin-top: -2px;
+  position: relative;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  width: 202px;
+}
+
+#submit {
+  display: inline-block;
+  padding: 10px 14px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: rgba(255,255,255, 0);
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+
+a.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -26em;
+  height: 20em;
+  width: 20em;
+  transform: translateY(-9.3em) rotate(45deg);
+  z-index: -100;
+  transition: 0.25s all;
+  border: solid 4px white;
+}
+
+a.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -24em;
+  height: 18em;
+  width: 18em;
+  transform: translateY(-8.1em) rotate(45deg);
+  z-index: -100;
+  transition: 0.25s all;
+  background-color: white;
+}
+
+.button-container {
+  text-align: center;
+  margin: 8% 0;
+}
+
+.button-container {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+/* bounce animation */
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .second-page-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  form {
+    display: block;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .event-content {
+    padding: 40px;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
