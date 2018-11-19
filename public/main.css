@@ -73,20 +73,17 @@ body, html {
   padding-bottom: 15px;
 }
 
-
-
 .register-button {
   display: flex;
   flex-direction: row;
-  /* text-align: center; */
   justify-content: center;
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 10px;
   padding-left: 10px;
-  /* text-decoration: none; */
 }
+
 
 .front-page h1 {
   color: #efefef;
@@ -263,6 +260,14 @@ input::-webkit-input-placeholder {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+  transition:color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+}
+
+.event-location:hover {
+  color: #A9A9A9;
 }
 
 
@@ -344,13 +349,17 @@ a.button::after {
 }
 
 .register-button {
-  color: white;
   border-radius: 23px;
-  background-color: #F45B69 !important;
+  background-color: #F45B69;
+  color: white;
+  transition:background-color 1s ease-out;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  transition: all .2s;
-  color: white;
+  /* transition: all .2s; */
+
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
@@ -360,14 +369,21 @@ a.button::after {
   margin-right: 10px;
 }
 
+.register-button:hover {
+  background-color: #D2898F;
+}
+
+
 .sponsor-button {
-  color: white;
   border-radius: 23px;
-  background-color: #456990 !important;
+  background-color: #456990;
+  transition:background-color 1s ease-out;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  color: white;
   font-weight: 600 !important;
   text-transform: uppercase !important;
-  transition: all .2s;
-  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
@@ -376,6 +392,13 @@ a.button::after {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.sponsor-button:hover {
+  background-color: #6892BF;
+  /* transition-delay: .2s; */
+
+}
+
 
 /* bounce animation */
 @-webkit-keyframes bounce {
