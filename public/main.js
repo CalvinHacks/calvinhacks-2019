@@ -62,7 +62,7 @@ $(document).ready(function() {
   // Scroll //
   ////////////
 
-  $(".button-container").click(function() {
+  $(".fa-angle-double-down").click(function() {
     $('html,body').animate({
       scrollTop: $(".second-page").offset().top
     },

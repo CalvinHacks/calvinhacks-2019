@@ -1,10 +1,12 @@
 /* Font */
-@import url(https://fonts.googleapis.com/css?family=Teko);
+/* @import url(https://fonts.googleapis.com/css?family=Teko); */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Teko', sans-serif;
+  /* font-family: 'Teko', sans-serif; */
+  font-family: 'Roboto', sans-serif;
 }
 
 .front-page {
@@ -47,6 +49,43 @@ body, html {
 
 .front-page-content h2 {
   color: #fff;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 15px; */
+  /* padding-bottom: 15px; */
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+
+.event-button {
+  display: flex;
+  flex-direction: row;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+.register-button {
+  display: flex;
+  flex-direction: row;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  /* text-decoration: none; */
 }
 
 .front-page h1 {
@@ -55,12 +94,6 @@ body, html {
   text-align: center;
 }
 
-.button-container {
-  padding: 0px;
-  border: 0px;
-  outline: none;
-  margin: 0px;
-}
 
 .second-page-content {
   display: flex;
@@ -90,7 +123,7 @@ body, html {
 }
 
 .second-page {
-  font-size: 24px;
+  font-size: 2vh;
   padding: 30px;
   background-color: #000;
   color: #fff;
@@ -98,10 +131,9 @@ body, html {
 
 .inner-button {
   display: inline-block;
-  padding: 10px 14px;
+  padding: 5px 10px;
   color: #FFF;
   text-decoration: none;
-  font-size: 50px;
   background-color: rgba(255,255,255, 0);
   -webkit-transition: background-color 300ms ease;
   -moz-transition: background-color 300ms ease;
@@ -220,14 +252,24 @@ input::-webkit-input-placeholder {
   transform: scale(1);
 }
 
-.countdown {
-  font-size: 40px;
+.event-date {
+  font-size: 2.5vh;
+  padding: 0;
+  margin: 0;
 }
 
-#time {
-  color: #fff;
-  font-size: 40px;
+.event-location {
+  font-size: 2.5vh;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
+
+
+/* #time { */
+/*   color: #fff; */
+/*   font-size: 40px; */
+/* } */
 
 textarea, select, input, button { outline: none; }
 
@@ -285,18 +327,55 @@ a.button::after {
 
 .button-container {
   text-align: center;
-  margin: 8% 0;
-}
+  /* margin: 8% 0; */
+  padding: 0px;
+  border: 0px;
+  outline: none;
+  margin: 0px;
+  padding-top: 50px;
 
-.register-button {
-  color: white;
-}
-
-.button-container {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
+.location-link {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+.register-button {
+  color: white;
+  border-radius: 23px;
+  background-color: #F45B69 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  transition: all .2s;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sponsor-button {
+  color: white;
+  border-radius: 23px;
+  background-color: #456990 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  transition: all .2s;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /* bounce animation */
 @-webkit-keyframes bounce {
@@ -328,12 +407,12 @@ a.button::after {
     transform: translateY(0);
   }
   40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
   }
 }
 
@@ -388,4 +467,28 @@ a.button::after {
     width: 100%;
   }
 
+  .event-button {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .register-button {
+    margin: 10px;
+  }
+
+  .sponsor-button {
+    margin: 10px;
+  }
+
+  .event-date {
+    font-size: 2.0vh;
+  }
+
+  .event-location {
+    font-size: 2.0vh;
+  }
 }
