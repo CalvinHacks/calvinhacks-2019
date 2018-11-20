@@ -1,15 +1,24 @@
 /* Font */
-/* @import url(https://fonts.googleapis.com/css?family=Teko); */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Teko);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+@font-face {
+    font-family: 'Junegull'; /*a name to be used later*/
+    src: url(assets/fonts/junegull.ttf); /*URL to font*/
+}
 
 body, html {
   margin: 0;
   padding: 0;
-  /* font-family: 'Teko', sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
 }
 
 .front-page {
+  background: #000;
+  background-image: url("assets/still.png");
+  background-position: center;
+  background-size: cover;
   position: relative;
   top: 0;
   right: 0;
@@ -115,8 +124,16 @@ body, html {
   color: #E4FDE1;
 }
 
+.about-info h1 {
+  font-family: "Junegull", sans-serif;
+}
+
 .event-info {
   color: #E4FDE1;
+}
+
+.event-info h1 {
+  font-family: "Junegull", sans-serif;
 }
 
 .second-page {
