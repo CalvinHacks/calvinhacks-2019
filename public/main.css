@@ -508,6 +508,7 @@ a.button::after {
     transform: translateY(-7px);
   }
 }
+
 @media screen and (max-width: 600px) {
   .FAQ-info .accordion {
     min-width: 225px !important;
