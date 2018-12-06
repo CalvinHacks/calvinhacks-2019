@@ -509,6 +509,17 @@ a.button::after {
   }
 }
 
+#mlh-trust-badge {
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  position:fixed;
+  right:50px;
+  top:0;
+  width:10%;
+  z-index:10000;
+}
+
 @media screen and (max-width: 600px) {
   .FAQ-info .accordion {
     min-width: 225px !important;
@@ -516,6 +527,9 @@ a.button::after {
 }
 
 @media screen and (max-width: 930px) {
+  #mlh-trust-badge {
+    position: absolute;
+  }
   .second-page-content {
     display: flex;
     flex-direction: column;
