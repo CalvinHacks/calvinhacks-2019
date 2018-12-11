@@ -51,6 +51,13 @@ body, html {
   z-index: 1;
 }
 
+.small-sponsor {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  padding: 5px;
+}
+
 .front-page-content {
   position: relative;
   z-index: 2;
@@ -527,6 +534,10 @@ a.button::after {
 }
 
 @media screen and (max-width: 930px) {
+  .small-sponsor {
+    width: 200px;
+  }
+
   #mlh-trust-badge {
     position: absolute;
   }
