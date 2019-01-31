@@ -71,13 +71,13 @@ body, html {
   padding: 0;
   margin: 0;
   list-style: none;
-  
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
+
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
@@ -94,13 +94,13 @@ body, html {
   padding: 0;
   margin: 0px 0px 10px 0px;
   list-style: none;
-  
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
+
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
@@ -161,12 +161,6 @@ body, html {
   flex-direction: column;
 }
 
-.FAQ-lane {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-}
 
 .about-lane {
   display: flex;
@@ -189,6 +183,7 @@ body, html {
 
 .FAQ-info {
   color: #EEFFED;
+  /* width: 100%; */
 }
 
 .FAQ-info h1 {
@@ -210,7 +205,7 @@ body, html {
   font-size:18px;
   border: none;
   color: #ABD5CA;
-  background-color: #000000;        
+  background-color: #000000;
   border-top: 1px solid #AAD3AB;
   cursor: pointer;
   padding: 18px;
@@ -264,6 +259,134 @@ body, html {
   /* content: "\f068"; /1* Unicode character for "minus" sign (-) *1/ */
   font-family: FontAwesome;
 }
+
+.FAQ-lane {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.schedule-lane {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.schedule-content {
+  padding: 30px;
+  /* max-width: 10000px; */
+  min-width: 1000px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.schedule-info {
+  color: #EEFFED;
+  /* width: 100%; */
+  width: 100%;
+}
+
+.schedule-info h1 {
+  color: #ABD5CA;
+  /* font-family: "Junegull", sans-serif; */
+  font-family: "Catamaran", sans-serif;
+  font-size: 64px;
+  /* font-weight: "800"; */
+  font-weight: "1200";
+  text-align: center;
+}
+
+
+.schedule-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+
+  /* flex-wrap: wrap; */
+  /* flex-grow: 1; */
+
+}
+
+.schedule-column {
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  margin: 30px;
+  /* border: 1px solid #AAD3AB; */
+}
+
+.schedule-column h2 {
+  text-align: center;
+  color: #ABD5CA;
+}
+
+.schedule-column ul {
+  list-style: none;
+  /* width: 70%; */
+  margin: auto;
+  padding: 0px;
+}
+
+.schedule-column li {
+  /* padding: 10px; */
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #AAD3AB; */
+  margin-bottom: 30px;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+}
+
+.schedule-column li .event-title {
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.schedule-column li .event-explanation {
+  /* padding: 10px; */
+  /* display: flex; */
+  color: #456990;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  text-align: left;
+  font-size: 15px;
+}
+
+.event-name {
+  /* float: left; */
+  /* background: #AAD3AB; */
+  color: #C8E2DC;
+  /* padding: 5px; */
+  transition:color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+}
+
+.event-name:hover {
+  /* background-color: #000; */
+  color: #fff;
+  /* background-color: #ccc; */
+}
+
 
 .second-page {
   font-size: 2.4vh;
@@ -605,13 +728,45 @@ a.button::after {
   z-index:10000;
 }
 
+
+@media screen and (max-width: 400px) {
+  .FAQ-info .accordion {
+    min-width: 225px !important;
+  }
+  .schedule-container {
+    width: 40%;
+    margin: 50px auto;
+
+  }
+  .schedule-column {
+    width: 40%;
+    margin: 50px auto;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   .FAQ-info .accordion {
     min-width: 225px !important;
   }
+  .schedule-container {
+    width: 50%;
+    margin: 50px auto;
+  }
 }
 
+
 @media screen and (max-width: 930px) {
+
+
+  .schedule-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule-column {
+    width: 70%;
+  }
   .small-sponsor {
     width: 200px;
   }
@@ -653,7 +808,7 @@ a.button::after {
   .about-content {
     flex-direction: column-reverse;
     padding: 5px;
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0px;
     justify-content: center;
     align-items: center;
@@ -704,4 +859,16 @@ a.button::after {
   .event-location {
     font-size: 15px;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .schedule-content {
+    min-width: 700px;
+    /* max-width: 1000px; */
+  }
+
+  /* .schedule-column { */
+  /*   margin: 100px; */
+
+  /* } */
 }
