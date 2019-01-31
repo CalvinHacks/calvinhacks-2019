@@ -341,16 +341,33 @@ body, html {
 }
 
 .schedule-column li {
-  /* padding: 10px; */
-  padding: 0px;
+  padding: 15px;
+  /* padding: 0px; */
   display: flex;
   flex-direction: column;
   /* border: 1px solid #AAD3AB; */
-  margin-bottom: 30px;
+  border-top: 1px solid #AAD3AB;
+  margin-bottom: 0px;
+  margin-top: 25px;
   /* display: flex; */
   /* flex-direction: row; */
   /* justify-content: space-between; */
 }
+
+/* .schedule-column .last-event { */
+/*   /\* padding: 15px; *\/ */
+/*   /\* padding: 0px; *\/ */
+/*   /\* display: flex; *\/ */
+/*   /\* flex-direction: column; *\/ */
+/*   /\* border: 1px solid #AAD3AB; *\/ */
+/*   border-bottom: 1px solid #AAD3AB; */
+/*   /\* margin-bottom: 0px; *\/ */
+/*   /\* margin-top: 20px; *\/ */
+/*   /\* display: flex; *\/ */
+/*   /\* flex-direction: row; *\/ */
+/*   /\* justify-content: space-between; *\/ */
+/* } */
+
 
 .schedule-column li .event-title {
   /* padding: 10px; */
