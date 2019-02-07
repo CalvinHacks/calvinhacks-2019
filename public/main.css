@@ -175,10 +175,11 @@ body, html {
 }
 
 .about-info h1 {
-  /* font-family: "Junegull", sans-serif; */
-  font-family: "Catamaran", sans-serif;
-  font-weight: "900";
+  font-family: "Junegull", sans-serif;
+  /* font-family: "Catamaran", sans-serif; */
+  /* font-weight: "900"; */
   /* color: #459F87; */
+  font-weight: 300;
   color: #ABD5CA;
 }
 
@@ -189,11 +190,12 @@ body, html {
 
 .FAQ-info h1 {
   color: #ABD5CA;
-  /* font-family: "Junegull", sans-serif; */
-  font-family: "Catamaran", sans-serif;
+  font-family: "Junegull", sans-serif;
+  /* font-family: "Catamaran", sans-serif; */
   font-size: 64px;
   /* font-weight: "800"; */
-  font-weight: "1200";
+  /* font-weight: "1200"; */
+  font-weight: 300;
   text-align: center;
 }
 
@@ -295,11 +297,12 @@ body, html {
 
 .schedule-info h1 {
   color: #ABD5CA;
-  /* font-family: "Junegull", sans-serif; */
-  font-family: "Catamaran", sans-serif;
+  font-family: "Junegull", sans-serif;
+  font-weight: 300;
+  /* font-family: "Catamaran", sans-serif; */
   font-size: 64px;
   /* font-weight: "800"; */
-  font-weight: "1200";
+  /* font-weight: "1200"; */
   text-align: center;
 }
 
