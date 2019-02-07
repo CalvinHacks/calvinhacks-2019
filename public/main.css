@@ -771,6 +771,20 @@ a.button::after {
     width: 50%;
     margin: 50px auto;
   }
+  .schedule-column li .event-title {
+    /* padding: 10px; */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* margin-bottom: 10px; */
+  }
+  .schedule-column li .event-explanation {
+    /* padding: 10px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    text-align: center;
+  }
+
 }
 
 
