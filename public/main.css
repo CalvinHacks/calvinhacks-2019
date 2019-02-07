@@ -13,6 +13,7 @@ body, html {
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
+  overflow-x: hidden;
 }
 
 .front-page {
@@ -270,7 +271,7 @@ body, html {
 
 .schedule-lane {
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -751,8 +752,8 @@ a.button::after {
     min-width: 225px !important;
   }
   .schedule-container {
-    width: 40%;
-    margin: 50px auto;
+    /* width: 40%; */
+    /* margin: 50px auto; */
 
   }
   .schedule-column {
