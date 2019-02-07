@@ -561,6 +561,32 @@ input::-webkit-input-placeholder {
 }
 
 
+.event-slack {
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  transition:color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  animation: blinker 1.5s linear infinite;
+}
+
+.event-slack:hover {
+  color: #A9A9A9;
+}
+
+
+
+.slack-link {
+  text-decoration: none;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
 /* #time { */
 /*   color: #fff; */
 /*   font-size: 40px; */
