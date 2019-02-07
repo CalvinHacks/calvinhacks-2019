@@ -389,7 +389,13 @@ body, html {
   /* justify-content: space-between; */
   text-align: left;
   font-size: 15px;
+  margin-bottom: 10px;
 }
+
+.schedule-column li .event-description {
+  text-align: left;
+  font-size: 13px;
+  }
 
 .event-name {
   /* float: left; */
@@ -807,6 +813,14 @@ a.button::after {
     /* margin-bottom: 10px; */
   }
   .schedule-column li .event-explanation {
+    /* padding: 10px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    text-align: center;
+  }
+
+  .schedule-column li .event-description {
     /* padding: 10px; */
     /* display: flex; */
     /* flex-direction: row; */
